@@ -52,7 +52,7 @@ const Index = () => {
           <Text fontSize="xl" fontWeight="bold">
             Color Name: {colorName}
           </Text>
-          {colorSwatch && <Image src={`data:image/svg+xml;utf8,${encodeURIComponent(colorSwatch)}`} alt="Color Swatch" mt={2} />}
+          {colorSwatch && <Box mt={2} dangerouslySetInnerHTML={{ __html: colorSwatch }} />}
         </Box>
       )}
     </Box>
